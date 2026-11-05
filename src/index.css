@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: 'DM Sans', Arial, sans-serif;
+  background: #ffffff;
+  color: #202a3b;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid #ed8c99;
+  outline-offset: 3px;
+}
+
+::selection {
+  background: #f9d9de;
+  color: #842233;
+}
+/* ==============================
+   BLOODBRIDGE GLOBAL FONT UPDATE
+================================ */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+/* Main page headings */
+h1 {
+  font-size: 34px !important;
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 26px !important;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 20px !important;
+  line-height: 1.4;
+}
+
+/* Normal text */
+p,
+li,
+label {
+  font-size: 16px !important;
+  line-height: 1.6;
+}
+
+/* Navigation and links */
+a {
+  font-size: 16px !important;
+}
+
+/* Buttons */
+button {
+  font-size: 16px !important;
+}
+
+/* Form fields */
+input,
+textarea,
+select {
+  font-size: 16px !important;
+}
+
+/* Small supporting text */
+small {
+  font-size: 14px !important;
+  line-height: 1.5;
+}
+/* Mobile font adjustments */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px !important;
+  }
+
+  h2 {
+    font-size: 23px !important;
+  }
+
+  h3 {
+    font-size: 19px !important;
+  }
+
+  body,
+  p,
+  li,
+  label,
+  a,
+  button {
+    font-size: 15px !important;
+  }
+}

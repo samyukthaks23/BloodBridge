@@ -1,0 +1,367 @@
+
+.auth-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  background: #fff;
+}
+
+.auth-side {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 38px 9%;
+  overflow: hidden;
+  color: white;
+  background:
+    radial-gradient(circle at 85% 75%, #e34c5c55, transparent 35%),
+    linear-gradient(145deg, #a91f34, #d72f43 65%, #bb263c);
+}
+
+.auth-side::after {
+  content: "♥";
+  position: absolute;
+  right: -25px;
+  bottom: 90px;
+  color: #ffffff0c;
+  font-size: 300px;
+  pointer-events: none;
+}
+
+.auth-brand {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 24px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+
+.auth-brand span {
+  margin-right: 8px;
+}
+
+.auth-side-content {
+  position: relative;
+  z-index: 1;
+  max-width: 450px;
+  margin: 65px 0;
+}
+
+.auth-eyebrow {
+  display: inline-block;
+  color: #d13a4c;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.auth-side .auth-eyebrow {
+  color: #ffd6dc;
+}
+
+.auth-side-content h1 {
+  margin: 22px 0;
+  font-size: clamp(35px, 4vw, 54px);
+  line-height: 1.15;
+  letter-spacing: -2px;
+}
+
+.auth-side-content > p {
+  color: #ffe4e7;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.auth-highlight {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 40px;
+  padding: 19px;
+  border: 1px solid #ffffff35;
+  border-radius: 13px;
+  background: #ffffff12;
+}
+
+.highlight-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 43px;
+  height: 43px;
+  border-radius: 11px;
+  background: #ffffff20;
+  font-size: 22px;
+}
+
+.auth-highlight strong {
+  font-size: 12px;
+}
+
+.auth-highlight p {
+  margin: 6px 0 0;
+  color: #ffe4e7;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.auth-side-footer {
+  position: relative;
+  z-index: 1;
+  color: #ffe0e4;
+  font-size: 11px;
+}
+
+.auth-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 8%;
+  min-width: 0;
+}
+
+.auth-form-wrap {
+  width: 100%;
+  max-width: 440px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 34px;
+  color: #7c8491;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: #d72f43;
+}
+
+.auth-form-wrap h2 {
+  margin: 13px 0 8px;
+  color: #202a3b;
+  font-size: clamp(26px, 3vw, 34px);
+  letter-spacing: -1.2px;
+}
+
+.auth-description {
+  margin: 0;
+  color: #858c98;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* THREE ROLE OPTIONS */
+/* THREE ROLE OPTIONS */
+.role-switch {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 10px;
+  margin: 27px 0;
+  padding: 7px;
+  border-radius: 12px;
+  background: #f6f4f5;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.role-switch button {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  width: 100%;
+  min-height: 52px;
+  padding: 14px 5px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  background: transparent;
+  color: #737b88 !important;
+  font-size: 15px !important;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  visibility: visible !important;
+  opacity: 1 !important;
+  transition: background 0.2s, color 0.2s;
+}
+
+.role-switch button.role-active {
+  background: white;
+  color: #c6283d !important;
+  box-shadow: 0 2px 8px #2222220c;
+}
+
+.role-switch button:hover {
+  color: #c6283d !important;
+}
+
+.auth-form {
+  display: grid;
+  gap: 17px;
+}
+
+.auth-form label {
+  display: grid;
+  gap: 8px;
+  color: #424b5b;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.auth-form input,
+.auth-form select {
+  width: 100%;
+  min-width: 0;
+  height: 47px;
+  padding: 0 13px;
+  border: 1px solid #e5e6eb;
+  border-radius: 8px;
+  outline: none;
+  background: #fff;
+  color: #30394a;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.auth-form input::placeholder {
+  color: #b0b5bf;
+}
+
+.auth-form input:focus,
+.auth-form select:focus {
+  border-color: #d72f43;
+  box-shadow: 0 0 0 3px #d72f4312;
+}
+
+.auth-submit {
+  width: 100%;
+  min-height: 49px;
+  margin-top: 5px;
+  border: 0;
+  border-radius: 8px;
+  background: #d72f43;
+  color: white;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.auth-submit:hover {
+  background: #b92135;
+  transform: translateY(-1px);
+}
+
+.auth-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.auth-switch-text {
+  margin-top: 25px;
+  color: #858c98;
+  text-align: center;
+  font-size: 12px;
+}
+
+.auth-switch-text a {
+  color: #c6283d;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.auth-switch-text a:hover {
+  text-decoration: underline;
+}
+
+.auth-privacy {
+  margin-top: 32px;
+  color: #a2a7b0;
+  font-size: 10px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.auth-message {
+  padding: 12px;
+  border-radius: 8px;
+  background: #fff0f1;
+  color: #a52235;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.mobile-brand {
+  display: none;
+}
+
+.register-wrap {
+  max-width: 460px;
+}
+
+@media (max-width: 850px) {
+  .auth-page {
+    grid-template-columns: 0.75fr 1.25fr;
+  }
+
+  .auth-side {
+    padding: 30px 7%;
+  }
+
+  .auth-main {
+    padding: 35px 6%;
+  }
+
+  .auth-side-content h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 620px) {
+  .auth-page {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-side {
+    display: none;
+  }
+
+  .auth-main {
+    display: block;
+    padding: 26px 7% 45px;
+  }
+
+  .mobile-brand {
+    display: inline-block;
+    margin-bottom: 36px;
+    color: #c6283d;
+    font-size: 22px;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  .back-link {
+    margin-bottom: 28px;
+  }
+
+  .auth-form-wrap h2 {
+    font-size: 29px;
+  }
+}
+
+@media (max-width: 360px) {
+  .role-switch {
+    gap: 3px;
+    padding: 4px;
+  }
+
+  .role-switch button {
+    font-size: 10px !important;
+    padding: 10px 1px;
+  }
+}

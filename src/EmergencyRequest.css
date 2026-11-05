@@ -1,0 +1,154 @@
+
+.emergency-page {
+  min-height: 100vh;
+  background: #f7f8fc;
+  color: #20253a;
+}
+
+.emergency-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 7%;
+  background: white;
+  border-bottom: 1px solid #eceef4;
+}
+
+.emergency-logo {
+  color: #d92344;
+  font-size: 23px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.back-home {
+  color: #41465a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.emergency-container {
+  width: min(900px, 92%);
+  margin: 40px auto;
+}
+
+.emergency-heading {
+  margin-bottom: 25px;
+}
+
+.emergency-label {
+  color: #d92344;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.emergency-heading h1 {
+  margin: 12px 0;
+  font-size: clamp(28px, 4vw, 38px);
+}
+
+.emergency-heading p {
+  color: #73788b;
+  line-height: 1.7;
+}
+
+.emergency-form {
+  padding: 30px;
+  background: white;
+  border: 1px solid #eceef4;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(25, 35, 65, 0.05);
+}
+
+.emergency-alert {
+  margin-bottom: 25px;
+  padding: 15px;
+  background: #fff0f2;
+  border-left: 4px solid #d92344;
+  border-radius: 8px;
+  color: #6d2634;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.form-grid input,
+.form-grid select {
+  width: 100%;
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid #dfe2eb;
+  border-radius: 9px;
+  background: white;
+  color: #20253a;
+  font: inherit;
+  font-weight: 400;
+}
+
+.form-grid input:focus,
+.form-grid select:focus {
+  outline: 2px solid #f4b3bf;
+  border-color: #d92344;
+}
+
+.submit-emergency {
+  width: 100%;
+  margin-top: 28px;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #d92344;
+  color: white;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.submit-emergency:hover {
+  background: #b91d38;
+}
+
+.request-success {
+  padding: 14px;
+  margin-top: 18px;
+  border-radius: 8px;
+  background: #e5f8ed;
+  color: #176b40;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .emergency-header {
+    padding: 18px;
+  }
+
+  .emergency-logo {
+    font-size: 19px;
+  }
+
+  .emergency-container {
+    margin: 25px auto;
+  }
+
+  .emergency-form {
+    padding: 20px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}

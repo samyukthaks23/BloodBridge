@@ -1,0 +1,208 @@
+
+.record-donation-page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: #f7f5fa;
+  font-family: "DM Sans", sans-serif;
+}
+
+.record-donation-container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.record-donation-header {
+  margin-bottom: 28px;
+}
+
+.record-back-button {
+  border: none;
+  background: transparent;
+  color: #a3234b;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.record-back-button:hover {
+  color: #781a38;
+}
+
+.record-tag {
+  display: inline-block;
+  padding: 7px 13px;
+  border-radius: 20px;
+  background: #fce8ef;
+  color: #a3234b;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.record-donation-header h1 {
+  color: #282336;
+  font-size: 32px;
+  margin: 15px 0 8px;
+}
+
+.record-donation-header p {
+  color: #777284;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.record-donation-form {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 18px;
+  border: 1px solid #eeeaf2;
+  box-shadow: 0 8px 30px rgba(38, 24, 54, 0.06);
+}
+
+.record-form-heading {
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eeeaf2;
+}
+
+.record-form-heading h2 {
+  color: #30283b;
+  font-size: 21px;
+  margin: 0 0 7px;
+}
+
+.record-form-heading p {
+  color: #888294;
+  font-size: 13px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.record-form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 23px;
+}
+
+.record-form-group label {
+  color: #393246;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+
+.record-form-group input,
+.record-form-group select {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid #e2dce9;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #393246;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.record-form-group input:focus,
+.record-form-group select:focus {
+  border-color: #b52d59;
+  box-shadow: 0 0 0 3px rgba(181, 45, 89, 0.09);
+}
+
+.record-form-group input::placeholder {
+  color: #aaa4b3;
+}
+
+.record-form-group small {
+  margin-top: 7px;
+  color: #8c8697;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.record-error,
+.record-success {
+  padding: 13px 15px;
+  border-radius: 9px;
+  margin-bottom: 18px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.record-error {
+  background: #fff0f0;
+  color: #c62828;
+  border: 1px solid #ffd5d5;
+}
+
+.record-success {
+  background: #edf9f0;
+  color: #247a3c;
+  border: 1px solid #ccebd4;
+}
+
+.record-submit-button {
+  width: 100%;
+  min-height: 50px;
+  border: none;
+  border-radius: 9px;
+  background: #b52d59;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.record-submit-button:hover:not(:disabled) {
+  background: #922047;
+  transform: translateY(-1px);
+}
+
+.record-submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.record-note {
+  margin: 17px 0 0;
+  color: #888294;
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.record-donation-loading {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f7f5fa;
+  color: #a3234b;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .record-donation-page {
+    padding: 25px 14px;
+  }
+
+  .record-donation-header h1 {
+    font-size: 26px;
+  }
+
+  .record-donation-form {
+    padding: 23px 18px;
+  }
+
+  .record-form-heading h2 {
+    font-size: 19px;
+  }
+}
